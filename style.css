@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+}
+body{
+    font-size: 100%;
+    background-color:blueviolet;
+}
+.Cabecalho{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+padding: 24px;
+}
+
+.cab_menu{
+display: flex;
+gap: 32px;
+}
+.cab_menu_item{
+    font-family: "Sarala", serif;
+    color:antiquewhite;
+    font-weight:400;
+    font-size: 18px;
+}
+.contudo{
+    border-top:0.4px solid antiquewhite;
+    margin-bottom: 48px;
+}
+.contudo-principal{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around ;
+}
+.Escrito{
+    display: flex;
+    flex-direction: column;
+    gap:48px;
+}
+.escrito_titulo{
+    font-family: "Righteous", serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: antiquewhite;
+}
+.escrito_sub{
+    font-family: "Sarala", serif;
+    font-weight: 400;
+    font-size: 24px;
+    color:antiquewhite;
+
+}
+.button{
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(red, green, blue, alpha) ;
+    border-radius: 20px;
+    font-family: "Sarala", serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: purple;
+}
+.button:hover {
+    background-color: aquamarine;
+}
+
+.feed{
+    height: 450px;
+}
+.feed{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:24px;
+    margin-top: 48px;
+    animation: mover 2s infinite alternate;
+
+}
+@keyframes mover {
+    from {
+        transform: translateY(0); /* Posição inicial */
+    }
+    to {
+        transform: translateY(-100px); /* Move 200px para a direita */
+    }
+}
+
+.Heleni_aula{
+    border-top: 0.4px solid antiquewhite;
+    padding-top: 48px;
+    font-family: "Righteous", serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: antiquewhite;
+    margin-bottom: 16px;
+}
+.paragrafo{
+    font-family: "Righteous", serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: antiquewhite;   
+}
+.avatar{
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    }
+
+
+
