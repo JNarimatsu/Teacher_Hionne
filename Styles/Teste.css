@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6a0dad;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .books-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .course-books, .practice-books, .companion-books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .course-books img, .practice-books img, .companion-books img {
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }

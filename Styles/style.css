@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
+:root{
+    --color-principal:#7A1CAC;
+    --color-text:#86D293;
+    --color-alternativa:#C1E2A4;
+    --color-secundaria:#FDFAD9;
+
+    --fonte-titulo:"Righteous", serif;
+    --fonte-texto:"Sarala", serif;
+
+
+}
 * {
 margin: 0;
 padding: 0;
@@ -7,8 +18,9 @@ box-sizing: border-box;
 text-decoration: none;
 }
 body{
+    height: 100vh;
     font-size: 100%;
-    background-color:blueviolet;
+    background-color:var(--color-principal);
 }
 .Cabecalho{
 display: flex;
@@ -18,19 +30,20 @@ justify-content: space-around;
 padding: 24px;
 }
 
-.cab_menu{
+.cabecalho_menu{
 display: flex;
 gap: 32px;
 }
-.cab_menu_item{
-    font-family: "Sarala", serif;
-    color:antiquewhite;
+.cabecalho_menu_item{
+    font-family: var(--fonte-texto);
+    color:var(--color-text);
     font-weight:400;
     font-size: 18px;
 }
 .contudo{
-    border-top:0.4px solid antiquewhite;
+    border-top:0.4px solid var(--color-alternativa);
     margin-bottom: 48px;
+   
 }
 .contudo-principal{
     display:flex;
@@ -44,16 +57,16 @@ gap: 32px;
     gap:48px;
 }
 .escrito_titulo{
-    font-family: "Righteous", serif;
+    font-family: var(--fonte-titulo);
     font-weight: 400;
     font-size: 64px;
-    color: antiquewhite;
+    color: var(--color-text);
 }
 .escrito_sub{
-    font-family: "Sarala", serif;
+    font-family: var(--fonte-texto);
     font-weight: 400;
     font-size: 24px;
-    color:antiquewhite;
+    color:var(--color-text);
 
 }
 .button{
@@ -62,13 +75,13 @@ gap: 32px;
     border: none;
     box-shadow: 4px 5px 4px rgba(red, green, blue, alpha) ;
     border-radius: 20px;
-    font-family: "Sarala", serif;
+    font-family: var(--fonte-texto);
     font-weight: 400;
     font-size: 24px;
-    color: purple;
+    color: var(--color-text);
 }
 .button:hover {
-    background-color: aquamarine;
+    background-color: var(--color-alternativa);
 }
 
 .feed{
@@ -94,25 +107,26 @@ gap: 32px;
 }
 
 .Heleni_aula{
-    border-top: 0.4px solid antiquewhite;
+    border-top: 0.4px solid var(--color-text);
     padding-top: 48px;
-    font-family: "Righteous", serif;
+    font-family: var(--fonte-titulo);
     font-weight: 400;
     font-size: 24px;
-    color: antiquewhite;
+    color: var(--color-text);
     margin-bottom: 16px;
 }
 .paragrafo{
-    font-family: "Righteous", serif;
+    font-family: var(--fonte-titulo);
     font-weight: 300;
     font-size: 18px;
-    color: antiquewhite;   
+    color: var(--color-text);   
 }
 .avatar{
     height: 400px;
     display: block;
     margin: 0 auto;
     }
+  
 
 
 
