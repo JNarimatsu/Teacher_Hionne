@@ -17,12 +17,14 @@ padding: 0;
 box-sizing: border-box;
 text-decoration: none;
 }
+    
+
 body{
     height: 100vh;
     font-size: 100%;
     background-color:var(--color-principal);
 }
-.Cabecalho{
+.cabecalho{
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -38,7 +40,7 @@ gap: 32px;
     font-family: var(--fonte-texto);
     color:var(--color-text);
     font-weight:400;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .contudo{
     border-top:0.4px solid var(--color-alternativa);
@@ -50,6 +52,7 @@ gap: 32px;
     flex-direction: row;
     align-items: center;
     justify-content:space-around ;
+    padding: 2%;
 }
 .Escrito{
     display: flex;
@@ -59,25 +62,25 @@ gap: 32px;
 .escrito_titulo{
     font-family: var(--fonte-titulo);
     font-weight: 400;
-    font-size: 64px;
+    font-size: 4rem;
     color: var(--color-text);
 }
 .escrito_sub{
     font-family: var(--fonte-texto);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     color:var(--color-text);
 
 }
 .button{
-    width: 180px;
-    height: 60px;
+    width: 50%;
+    height: 30%;
     border: none;
     box-shadow: 4px 5px 4px rgba(red, green, blue, alpha) ;
     border-radius: 20px;
     font-family: var(--fonte-texto);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--color-text);
 }
 .button:hover {
@@ -111,22 +114,93 @@ gap: 32px;
     padding-top: 48px;
     font-family: var(--fonte-titulo);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--color-text);
     margin-bottom: 16px;
 }
 .paragrafo{
     font-family: var(--fonte-titulo);
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--color-text);   
 }
 .avatar{
     height: 400px;
     display: block;
     margin: 0 auto;
-    }
+}
+.rodape{
+   margin: 80px 0 0 0 ; 
+}
+.rodape__social-item{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
   
+}
+
+.rodape__link{
+   color: var(--color-text);
+    font-family: var(--fonte-texto);
+    text-decoration: none;
+    display: flex;
+    padding: 0 900px 0 ;
+    
+    
+    
+}
+.rodape__copy{
+    color: var(--color-alternativa);
+    padding: 2% 0% 2% 0%;
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
 
 
+@media screen and (max-width:768px){
+   .cabecalho_menu{
+    justify-content: center;
+    padding: .3px;
+    margin: .3px;
+   }
+  
+   .contudo-principal{
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0 1em;
+   }
+   .feed{
+    display: flex;
+    width: 60%;
+    height: 40%;
+   margin: 0 1em ;
+    animation: none; Desativa a animação em telas pequenas
+   }
+   
+    .escrito_meme{
+        display: none;
+    }
+   .rodape{
+    padding: 1px;
+   }
+   .rodape__link{
+    width: 3px;
+    height: 3px;
+    flex-direction: row;
+    padding: 0 0 40px 0;
+   }
+   .rodape__social-item{
+    width: 25px;
+    height: 25px;
+  
+   }
 
+}
+
+@media screen and(min-width:768) and(min-width: 1023) {
+  
+   
+    
+}

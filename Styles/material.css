@@ -22,7 +22,7 @@
 body{
     font-family: var(--fonte-texto);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0;
     padding: 20px;
     background-color: var(--color-principal);
@@ -57,7 +57,7 @@ body{
 
 }
 .container__horizontal h2{
-    width: 1000px;
+    width: 90%;
     border-bottom: 2px dashed var(--color-text);
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -89,7 +89,7 @@ body{
     gap: 10px;
 }
 .container__vertical h2{
-    width: 450px;
+    width: 85%;
     border-bottom: 2px dashed var(--color-text);
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -118,4 +118,20 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.rodape{
+    color: var(--color-alternativa);
+    padding: 10% 0% 2% 0%;
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+@media screen and (max-width:720px){
+    .container{
+        flex-direction: column;
+    }
+    .container__vertical{
+        width: 50%;
+    }
 }
